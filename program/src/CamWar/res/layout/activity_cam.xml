@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:id="@+id/FrameLayout1"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent" >  
+    <!-- 显示预览图形 -->  
+    <SurfaceView   
+        android:id="@+id/surfaceView"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent"  
+        />  
+    <!-- 相对布局，放置两个按钮 -->  
+        <RelativeLayout  
+            android:id="@+id/buttonLayout"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:visibility="gone"  
+        >  
+        <ImageView
+            android:id="@+id/line11"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"  
+            android:layout_alignParentLeft="true" 
+            android:layout_marginTop="172.5px" 
+            android:background="@drawable/line1"
+            ></ImageView>
+         <ImageView
+            android:id="@+id/line12"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"  
+            android:layout_alignParentLeft="true" 
+            android:layout_marginTop="345px" 
+            android:background="@drawable/line1"
+            ></ImageView>
+          <ImageView
+            android:id="@+id/line13"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"  
+            android:layout_alignParentLeft="true" 
+            android:layout_marginTop="517.5px" 
+            android:background="@drawable/line1"
+            ></ImageView>
+          <ImageView
+            android:id="@+id/line21"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"  
+            android:layout_alignParentLeft="true" 
+            android:layout_marginLeft="160px" 
+            android:background="@drawable/line2"
+            ></ImageView>
+          <ImageView
+            android:id="@+id/line22"
+            android:layout_width="2dp"            
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"  
+            android:layout_alignParentLeft="true" 
+            android:layout_marginLeft="320px" 
+            android:background="@drawable/line2"
+            ></ImageView>
+        <!-- 拍照按钮 -->  
+        <Button   
+            android:id="@+id/takepicture"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_alignParentRight="true"  
+            android:layout_alignParentBottom="true"  
+            android:background="@drawable/btn_tabkepicture_selector"  
+            android:onClick="btnOnclick"  
+            />  
+          
+    </RelativeLayout>  
+</FrameLayout>  

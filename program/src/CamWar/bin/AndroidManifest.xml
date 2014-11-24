@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.camwar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+        <uses-permission android:name="android.permission.CAMERA" />  
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+
+    <application
+        android:name="com.example.camwar.GameData"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.example.camwar.MainMenu"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.camwar.BattleActivity"
+            android:label="@string/title_activity_battle" >
+        </activity>
+        <activity
+            android:name="com.example.camwar.RecoActivity"
+            android:label="@string/title_activity_reco" >
+        </activity>
+        <activity
+            android:name="com.example.camwar.CamActivity"
+            android:label="@string/title_activity_cam" >
+        </activity>
+        <activity
+            android:name="com.example.camwar.ShowPicActivity"
+            android:label="@string/title_activity_show_pic" >
+        </activity>
+    </application>
+
+</manifest>

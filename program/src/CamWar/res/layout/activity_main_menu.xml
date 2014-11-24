@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".MainMenu" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="450dp"
+        android:background="@color/black_overlay"
+        android:src="@drawable/makeitem"
+        android:onClick="startmakeitem"
+         />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="450dp"
+        android:background="@color/black_overlay"
+        android:onClick="startbattlebtn"
+        android:src="@drawable/startbattle" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="169dp"
+        android:layout_height="169dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher" />
+
+</FrameLayout>
